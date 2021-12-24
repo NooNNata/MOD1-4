@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".updateData"
+    android:padding="20dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/logo_image"
+                android:layout_width="317dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:src="@drawable/profile" />
+
+            <TextView
+                android:id="@+id/logo_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="-20dp"
+                android:fontFamily="@font/bungee"
+                android:layout_margin="5dp"
+                android:text="Update data olahragawan"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mohon isi data terbaru"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/nama2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="3dp"
+                    android:text="Nama"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/inputnama2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Nama"
+                    android:inputType="textPersonName"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/nomor2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="3dp"
+                    android:text="Nomor Telepon"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/inputnomor2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Nomor Telepon"
+                    android:inputType="phone"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/alamattampil2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="3dp"
+                    android:text="Alamat"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/inputalamat2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Alamat"
+                    android:inputType="textPersonName"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/gender2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="3dp"
+                    android:text="Jenis Kelamin"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="18sp"/>
+
+                <RadioGroup
+                    android:id="@+id/gender_group2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/maleGender2"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:buttonTint="@color/black"
+                        android:text="Laki - Laki"
+                        android:layout_weight="1"
+                        android:textSize="20sp" />
+
+                    <RadioButton
+                        android:id="@+id/femaleGender2"
+                        android:layout_width="208dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/black"
+                        android:text="Perempuan"
+                        android:textSize="20sp" />
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/olahraga2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="3dp"
+                    android:text="List instruktur olahraga"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/renangCheckbox2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/black"
+                    android:text="Renang"
+                    android:textSize="18sp" />
+
+                <CheckBox
+                    android:id="@+id/basketCheckbox2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/black"
+                    android:text="Basket"
+                    android:textSize="18sp" />
+
+                <CheckBox
+                    android:id="@+id/vollyCheckbox2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/black"
+                    android:text="Volly"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/seekbar2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="3dp"
+                    android:text="Lama Waktu Menyewa (jam)"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <SeekBar
+                    android:id="@+id/seekdDay2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:min="1"
+                    android:progress="1"
+                    android:max="24" />
+
+                <TextView
+                    android:id="@+id/day2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:text="1 jam"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+                <Button
+                    android:id="@+id/update"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Update"
+                    android:textColor="@color/white"
+                    app:backgroundTint="#000000" />
+
+            <Button
+                android:id="@+id/delete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:text="Delete"
+                android:textColor="#FF0000"
+                app:backgroundTint="#FFFFFF"
+                app:iconTint="@color/black" />
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
